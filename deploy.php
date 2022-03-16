@@ -21,8 +21,7 @@ add('writable_dirs', []);
 
 
 // Hosts
-host('IP name: ip-172-31-81-1.ec2.internal') // Name of the server
-    ->hostname('3.82.203.16') // Hostname or IP address
+    host('3.82.203.16') // Hostname or IP address
     ->stage('production') // Deployment stage (production, staging, etc)
     ->user('ubuntu') // SSH user
     ->set('deploy_path', '/var/www/html'); // Deploy path
