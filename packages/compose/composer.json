@@ -1,0 +1,54 @@
+{
+    "name": "hp/compose",
+    "description": "",
+    "keywords": [
+        "hp",
+        "compose"
+    ],
+    "homepage": "https://github.com/hp/compose",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "sulai46",
+            "email": "sulaiman@sparkouttech.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hp\\Compose\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hp\\Compose\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hp\\Compose\\ComposeServiceProvider"
+            ],
+            "aliases": {
+                "Compose": "Hp\\Compose\\ComposeFacade"
+            }
+        }
+    }
+}

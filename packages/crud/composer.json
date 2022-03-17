@@ -1,0 +1,11 @@
+{
+    "name": "hp/crud",
+    "description": "This is Crud Functionality package",
+    "authors": [
+        {
+            "name": "sulai46",
+            "email": "sulaiman@sparkouttech.com"
+        }
+    ],
+    "require": {}
+}
